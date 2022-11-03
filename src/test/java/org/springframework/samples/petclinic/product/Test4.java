@@ -26,7 +26,7 @@ public class Test4 {
         Optional<Product> p1=pr.findById(1);
         assertTrue(p1.isPresent(),"Product with id:1 not found");
         assertNotNull(p1.get().getProductType(),"The product with id:1 has not a product type associated");
-        assertEquals("Accessories",p1.get().getProductType().getName(),"The name of the product type associated to the product with id:1 is not 'Accessories'");
+        assertEquals("Accesories",p1.get().getProductType().getName(),"The name of the product type associated to the product with id:1 is not 'Accessories'");
 
         Optional<Product> p2=pr.findById(2);
         assertTrue(p2.isPresent(),"Product with id:2 not found");
